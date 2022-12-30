@@ -266,7 +266,7 @@ print(tokenizer.decode(data['target_ids']))
 if not os.path.exists('t5_boolq'):
     os.makedirs('t5_boolq')
 
-args_dict.update({'data_dir': 'boolq_data', 'output_dir': 't5_boolq', 'num_train_epochs':4,'max_seq_length':256})
+args_dict.update({'data_dir': 'boolq_data', 'output_dir': 't5_boolq', 'num_train_epochs':10,'max_seq_length':256})
 args = argparse.Namespace(**args_dict)
 print(args_dict)
 
